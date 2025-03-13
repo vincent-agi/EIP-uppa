@@ -1,3 +1,4 @@
+```mermaid
 graph TD
   %% FRONTEND  
   subgraph "Frontend (Angular)"
@@ -45,3 +46,4 @@ graph TD
 
   WSClient --> |Listens for price updates| WebSocketServer
   API --> |Exposes errors| DeadLetter
+```
