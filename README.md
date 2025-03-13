@@ -1,6 +1,6 @@
 # Real-Time Market Price Updates with Enterprise Integration Patterns
 
-Before all, please view [LICENCE](./LICENCE)
+Before all, please view [LICENSE](./LICENSE)
 
 ## Context and Subject
 
