@@ -1,5 +1,7 @@
 # Real-Time Market Price Updates with Enterprise Integration Patterns
 
+Before all, please view [LICENCE](./LICENCE)
+
 ## Context and Subject
 
 This university project focuses on implementing `Enterprise Integration Patterns` (EIP) in a real-world scenario: a real-time stock market price update system. The goal is to explore how different integration patterns can be applied to process, aggregate, and distribute stock price updates efficiently and reliably.
