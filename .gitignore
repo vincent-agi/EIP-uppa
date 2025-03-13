@@ -1,0 +1,7 @@
+backend/node_modules
+backend/dist
+frontend/node_module
+frontend/.angular
+frontend/.vscode
+frontend/dist
+
