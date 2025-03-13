@@ -12,7 +12,7 @@ async function aggregateStockPrice(stock: { symbol: string; price: number }) {
     console.warn(`⚠️ Aucune donnée stockée pour ${stock.symbol}, initialisation...`);
   }
 
-  const numericPrices = prices.map(Number).filter((p) => !isNaN(p)); // Filtrer les valeurs non valides
+  const numericPrices = prices.map(Number).filter((p) => !isNaN(p));
   numericPrices.unshift(stock.price);
 
   if (numericPrices.length > WINDOW_SIZE) numericPrices.pop();

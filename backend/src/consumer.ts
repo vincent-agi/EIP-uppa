@@ -19,7 +19,6 @@ client.createTopics(topicToCreate, (err, result) => {
     console.log("✅ Topic 'stock-prices' créé ou déjà existant.");
   }
 
-  // 🔄 Initialisation du consommateur après la création du topic
   const consumer = new kafka.Consumer(
     client,
     [{ topic: "stock-prices", partition: 0 }],

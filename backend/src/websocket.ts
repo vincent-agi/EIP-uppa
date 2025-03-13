@@ -1,7 +1,7 @@
 import { Server } from "socket.io";
 import { createServer } from "http";
 import express from "express";
-import { eventEmitter } from "./events"; // Import de eventEmitter
+import { eventEmitter } from "./events";
 
 const app = express();
 const server = createServer(app);
@@ -22,10 +22,9 @@ io.on("connection", (socket) => {
   });
 });
 
-// 🔥 Émission des prix agrégés aux clients WebSocket
 eventEmitter.on("save-aggregated-price", (stock) => {
   console.log(`📡 Envoi WebSocket: ${stock.symbol} -> $${stock.avgPrice}`);
-  io.emit("stock-price-update", stock); // Envoi aux clients
+  io.emit("stock-price-update", stock);
 });
 
 server.listen(PORT, "0.0.0.0", () => {
