@@ -1,5 +1,5 @@
 <div class="container">
-    <h2>📈 Stock Prices (Real-Time)</h2>
+    <h2>Stock Prices (Real-Time)</h2>
     <table>
       <thead>
         <tr>
@@ -9,8 +9,10 @@
       </thead>
       <tbody>
         @for(stock of stockPrices; track stock.symbol) {
+          <tr>
             <td>{{ stock.symbol }}</td>
-            <td>{{ stock.avgPrice | number: '1.2-2' }} $</td>
+            <td>{{ stock.avgPrice | number: '1.2-2' }} euro</td>
+          </tr>
         }
       </tbody>
     </table>
