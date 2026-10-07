@@ -5,3 +5,7 @@ frontend/.angular
 frontend/.vscode
 frontend/dist
 
+
+# Local environment file (use .env.example as a template)
+.env
+!.env.example
